@@ -1,7 +1,16 @@
 body {
     font-family: "HelveticaNeue", "Arial", sans-serif;
-  }
+  
+
+h1 {
+    font-size: 40px;
+}
 
 h2 {
-    font-size: 30px;
+    font-size: 90px;
+}
+
+p {
+    font-size: 14px;
+}
 }

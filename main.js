@@ -1,5 +1,12 @@
+const BASE_URL = "http://zagster-service.herokuapp.com"
+
 $ (updateView)
 
 function updateView() {
-    alert("I asked my wife what I should put in this text box, and her suggestion was not very appropriate. So I decided to just put this instead.")
+    $.getJSON(BASE_URL + "/rides/count" , updateRideCount)
+}
+
+function updateRideCount(data) {
+    numberOfRides = data.count
+    $("h2#rideCount").html(numberOfRides)
 }

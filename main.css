@@ -13,4 +13,9 @@ h2 {
 p {
     font-size: 14px;
 }
+.chartContainer {
+    border: 2px dashed #D8D8D8;
+    height: 400px;
+    width: 50%;
+    margin: auto;
 }

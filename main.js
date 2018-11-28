@@ -5,7 +5,7 @@ $(updateView)
 function updateView() {
     $.getJSON(BASE_URL + "/rides/count" , updateRideCount)
     $.getJSON(BASE_URL + "/rides/count/per_hour" , displayHourChart);
-    //displayGraph();
+    displaymyChart();
 }
 function updateRideCount(data) {
     $("h2#Count").html(data.count)

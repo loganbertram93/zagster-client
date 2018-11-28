@@ -8,8 +8,8 @@ function updateView() {
     displayHourChart();
 }
 function updateRideCount(data) {
-    $("h2#Count").html(data.count)
-    $("h2#Count").css('visibility', 'visible').hide().fadeIn("slow")
+  numberOfRides = data.count
+  $("h2#rideCount").html(numberOfRides)
 }
 
 function displayHourChart(data) {

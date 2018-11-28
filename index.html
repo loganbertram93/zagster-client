@@ -15,9 +15,13 @@ integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=
 <h1>Zagster Bike Share in Bend</h1>
 <h2 id="rideCount">TODO</h2>
 <p>Total Rides</p>
+<h1>About the Data</h1>
+<p>The bar graph below shows how many total rides have happened at different hours of the day. The use of this data shows what the busiest times of day are to use the Zagster bike sharing app. My inspiration for this data visualization was from when you Google a restraunt or business, there is always a bar graph displayed on the right hand side of the screen as the busiest hours of operation. Through this data, I discovered that the busiest times of Zagster usage are from 2:00pm to 9:00pm. I also discovered that the "busiest" hours really aren't all that busy after all. Even the 4:00pm hour, which was the highest usage hour at 2,119 rides, only comes out to an average of less than 3 rides during that hour per day. So it safe to say that you shouldnt ever have to worry too much about finding a Zagster bike at one of the drop off locations around Bend. </p>
+<div id="ridesPerHour">
+    <canvas id="myChart" width="400"></canvas>
+</div>
 
 <canvas id="myChart" width="600px" height="600px"></canvas>
-<script>
 var ctx = document.getElementById("myChart");
 var myChart = new Chart(ctx, {
     type:'bar',
